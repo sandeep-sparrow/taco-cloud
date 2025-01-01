@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taco Cloud</title>
     <link rel="icon" href="/images/Taco.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Welcome to...</h1>
-    <img th:src="@{/images/TacoCloud.png}" alt="image">
+<header class="text-black py-3">
+    <div class="container text-center">
+        <h1>Taco Cloud</h1>
+    </div>
+</header>
+
+<main class="container py-4">
+    <h1 class="text-center mb-4">Welcome to...</h1>
+    <div class="text-center mb-4">
+        <img th:src="@{/images/TacoCloud.png}" alt="Taco Cloud Logo" class="img-fluid" style="max-width: 200px;"/>
+    </div>
+</main>
+
+<footer class="text-black py-3 mt-4">
+    <div class="container text-center">
+        <p>&copy; 2025 Taco Cloud. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
